@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/login.css">
+    
+    <title>Login</title>
+</head>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">C4OS N3WS</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/hola_mundo.html">inicio</a></li>
+                    <!--cambiar # por enlase-->
+                    <li><a href="/paginas/sobre_nosotros.html">sobre nosotros</a></li>
+                    <!--cambiar # por enlase-->
+                    <li><a href="#">contacto</a></li>
+                    <!--cambiar # por enlase-->
+                    <li><a href="/paginas/register.html">registrace</a></li>
+                    <!--cambiar # por enlase-->
+                </ul>
+            </nav>
+        </div>
+    </header>
+<body>
+    <div class="container">
+        <form id="loginForm" onsubmit="return validateLogin()">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
