@@ -22,7 +22,7 @@ body {
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)
         ),
-        url(/images/fondo2.png);
+        url(images/fondo2.png);
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -198,7 +198,7 @@ html, body {
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)
         ),
-        url(/images/fondov2.jpg);
+        url(images/fondov2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -256,14 +256,14 @@ html, body {
 }
 
 .general-2 {
-    background-image: url(/images/660x360.png);
+    background-image: url(images/660x360.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
 }
 .general-3 {
-    background-image: url(/images/660x360.png);
+    background-image: url(images/660x360.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

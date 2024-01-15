@@ -1,34 +1,28 @@
 function validateLogin() {
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+    var username = document.getElementById('nombre').value;
+    var password = document.getElementById('contraseña').value;
 
     if (username === '' || password === '') {
-        alert('Username and password are required.');
+        alert('tiene que completar las casillas.');
         return false;
     }
-
-    // Additional login validations can be added here
-
     return true;
 }
 
 function validateRegister() {
-    var username = document.getElementById('username').value;
+    var username = document.getElementById('nombre').value;
     var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-    var confirmPassword = document.getElementById('confirmPassword').value;
+    var password = document.getElementById('contraseña').value;
+    var confirmPassword = document.getElementById('confirmar contraseña').value;
 
     if (username === '' || email === '' || password === '' || confirmPassword === '') {
-        alert('All fields are required.');
+        alert('todo tiene que ser completado.');
         return false;
     }
 
     if (password !== confirmPassword) {
-        alert('Password and Confirm Password must match.');
+        alert('las contyraseñas no son iguales');
         return false;
     }
-
-    // Additional register validations can be added here
-
     return true;
 }

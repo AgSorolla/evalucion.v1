@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/estilos/login.css">
-    
+    <link rel="stylesheet" href="login.css">
     <title>Login</title>
 </head>
+<body>
     <header class="header">
         <div class="menu container">
             <a href="#" class="logo">C4OS N3WS</a>
@@ -16,29 +16,24 @@
             </label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="/hola_mundo.html">inicio</a></li>
-                    <!--cambiar # por enlase-->
-                    <li><a href="/paginas/sobre_nosotros.html">sobre nosotros</a></li>
-                    <!--cambiar # por enlase-->
+                    <li><a href="hola_mundo.html">inicio</a></li>
+                    <li><a href="sobre_nosotros.html">sobre nosotros</a></li>
                     <li><a href="#">contacto</a></li>
-                    <!--cambiar # por enlase-->
-                    <li><a href="/paginas/register.html">registrace</a></li>
-                    <!--cambiar # por enlase-->
+                    <li><a href="register.html">registrace</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-<body>
+
     <div class="container">
         <form id="loginForm" onsubmit="return validateLogin()">
-            <h2>Login</h2>
-            <label for="username">Username:</label>
+            <h2>Ingresar</h2>
+            <label for="username">Nombre:</label>
             <input type="text" id="username" name="username" required>
 
-            <label for="password">Password:</label>
+            <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password" required>
-
-            <button type="submit">Login</button>
+            <button type="submit">Ingresar</button>
         </form>
     </div>
 
