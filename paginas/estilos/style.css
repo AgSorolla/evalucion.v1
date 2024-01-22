@@ -22,7 +22,7 @@ body {
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)
         ),
-        url(images/fondo2.png);
+        url(./images/fondo2.png);
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
