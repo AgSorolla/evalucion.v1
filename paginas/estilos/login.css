@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 * {
     margin: 0;
@@ -22,7 +22,7 @@ body {
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)
         ),
-        url(images/fondo2.png);
+        url(../images/fondo2.png);
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;

@@ -16,17 +16,17 @@
             </label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="hola_mundo.html">inicio</a></li>
-                    <li><a href="sobre_nosotros.html">sobre nosotros</a></li>
-                    <li><a href="#">contacto</a></li>
-                    <li><a href="register.html">registrace</a></li>
+                    <li><a href="hola_mundo.html">Inicio</a></li>
+                    <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="register.html">Registrarse</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <div class="container">
-        <form id="loginForm" onsubmit="return validateLogin()">
+        <form id="loginForm" onsubmit="return validateLogin()" method="post">
             <h2>Ingresar</h2>
             <label for="username">Nombre:</label>
             <input type="text" id="username" name="username" required>
@@ -37,6 +37,6 @@
         </form>
     </div>
 
-    <script src="script.js"></script>
+    <script src=".\js\login.js"></script>
 </body>
 </html>
