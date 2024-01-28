@@ -25,13 +25,11 @@
             </label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="hola_mundo.html">Inicio</a></li>
-                    <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="{% url 'index' %}">Inicio</a></li>
+                    <li><a href="{% url 'sobre_nosotros' %}">Sobre Nosotros</a></li>
                     <li><a href="#">Contacto</a></li>
-                    <li><a href="register.html">Registrarse</a></li>
-                    <li><a href="login.html">Ingresar</a></li>
-                    
-
+                    <li><a href="{% url 'register' %}">Registrarse</a></li>
+                    <li><a href="{% url 'login' %}">Ingresar</a></li>
                 </ul>
             </nav>
         </div>
@@ -70,8 +68,8 @@ es mantenerte informado y comprometido con los eventos más destacados.
                     <img src="{% static 'appnoticias/images/NOTICIA1.jpg' %}" class="d-block w-100" alt="..."
                         style="max-height: 70vh;"> <!-- Ajusta el max-height según tus necesidades -->
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>mi papá llegó a la casa</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5>Crisis de desapariciones</h5>
+                        <p>Crece la angustia y la desesperación de los ciudadanos al notar que las autoridades no avanzan.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -146,7 +144,7 @@ es mantenerte informado y comprometido con los eventos más destacados.
                     </p>
                 </div>
             </div>
-            <a href="noticia.html" class="btn-1">informacion </a>
+            <a href="noticia.html" class="btn-1">Informacion </a>
         </div>
     </section>
 

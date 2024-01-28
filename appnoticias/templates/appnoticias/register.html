@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/login.css">
+    <link rel="stylesheet" href="{% static 'appnoticias/estilos/register.css' %}">
     
     <title>Register</title>
 </head>
@@ -12,17 +13,18 @@
             <a href="#" class="logo">C4OS N3WS</a>
             <input type="checkbox" id="menu" />
             <label for="menu">
-                <img src="images/menu.png" class="menu-icono" alt="">
+                <img src="{% static 'appnoticias/images/menu.png' %}" class="menu-icono" alt="">
             </label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="hola_mundo.html">Inicio</a></li>
+                    <li><a href="{% url 'index' %}">Inicio</a></li>
                     <!--cambiar # por enlase-->
-                    <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="{% url 'sobre_nosotros' %}">Sobre nosotros</a></li>
                     <!--cambiar # por enlase-->
                     <li><a href="#">Contacto</a></li>
                     <!--cambiar # por enlase-->
-                    <li><a href="login.html">Ingresar</a></li>
+                    <li><a href="{% url 'register' %}">Registrarse</a></li>
+                    <li><a href="{% url 'login' %}">Ingresar</a></li>
                     <!--cambiar # por enlase-->
                 </ul>
             </nav>
@@ -48,7 +50,7 @@
         </form>
     </div>
 
-    <script src="./js/login.js"></script>
+    <script src="{% static 'appnoticias/js/login.js' %}"></script>
 </body>
 </html>
 
