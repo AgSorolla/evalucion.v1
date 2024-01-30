@@ -2,6 +2,7 @@ from django.shortcuts import redirect, render
 from django.contrib.auth import authenticate, login
 from .forms import LoginForm
 from django.contrib import messages
+from .models import Noticia
 
 
 # Create your views here.
@@ -22,8 +23,9 @@ def mas_noticias(request):
 
 
 def noticia(request):
-    context={}
-    return render(request, 'appnoticias/noticia.html')
+    noticias= Noticia.objects.all()
+    context={"noticias":noticias}
+    return render(request, 'appnoticias/noticia.html', context)
 
 
 def register(request):
